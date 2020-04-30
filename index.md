@@ -7,7 +7,7 @@ Hi, I'm a first-year student at Brooklyn College. I plan to double major in both
 There should be code below me, it's probably radical.
 
 ```markdown
-System.out.println("Hellow World!");
+System.out.println("Hello World!");
 ```
 
 This is my Data Structure's instructor's [page](https://libguides.brooklyn.cuny.edu/cisc3130).
