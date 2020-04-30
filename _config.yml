@@ -3,9 +3,3 @@ remote_theme: thelehhman/plainwhite-jekyll
 plainwhite:
   name: Mehdi Imam
   tagline: C.S Student
-  date_format: "%b %-d, %Y"
-  
-social_links:
-  twitter: thelehhman
-  github: thelehman
-  linkedIn: in/thelehhman # format: locale/username
