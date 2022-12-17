@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Form</title>
+    <body>
+        <a href="index.html"><p>Go back</p></a>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value=""><br><br>
+            <label for="bg-color">Background Color:</label><br>
+            <input type="color" id="bg-color" name="bg-color" value="#ffffff"><br><br>
+            <label for="text-color">Text Color:</label><br>
+            <input type="color" id="text-color" name="text-color" value="#000000"><br><br>
+            <label for="text-size">Text Size:</label><br>
+            <input type="range" min="12" max="48" value="12" id="text-size"><br><br>
+            <label for="font">Font:</label><br><br>
+            <input type="radio" id="font-1" name="font" value="Arial, sans-serif">
+            <label for="font-1">Arial</label><br>
+            <input type="radio" id="font-2" name="font" value="Times New Roman, serif">
+            <label for="font-2">Times New Roman</label><br>
+            <input type="radio" id="font-3" name="font" value="Brush Script MT, cursive">
+            <label for="font-3">Courier New</label><br><br>
+            <button type="reset">Reset</button>
+          </form>
+          <div id="text"></div>
+        <script src="assets/js/cisc3610_text_form.js"></script> 
+    </body>
+</head>
+</html>
