@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Set the container element to have a fixed width and height, and give it a border and a background color to make it look like a sound machine */
+        #sound-machine {
+            width: 500px;
+            height: 700px;
+            border: 1px solid black;
+            background-color: #ddd;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        /* Style the buttons to have a fixed size, a border, and a background color */
+        .sound-button, .sound-button-pause {
+            width: 120px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+            background-color: rgb(127, 255, 148);
+            text-align: center;
+            line-height: 100px;
+            font-size: 10px;
+            cursor: pointer;
+            white-space: normal;
+        }
+
+        img {
+            margin-right: 20px;
+        }
+
+        .sound-button-pause {
+            background-color: rgb(255, 127, 127);
+        }
+
+        /* Add a hover effect to the buttons by changing the background color when the mouse is over them */
+        .sound-button:hover {
+            background-color: rgba(0, 255, 42, 0.7);
+        }
+
+        .sound-button-pause:hover {
+            background-color: rgb(255, 0, 0, .685);;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="index.html"><p>Go back</p></a>
+    <div id="sound-machine">
+        <audio id="alligatorAudio">
+        <source src="assets/sounds/alligator3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+
+        <audio id="batAudio">
+            <source src="assets/sounds/bat1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio id="hyenaAudio">
+            <source src="assets/sounds/hyena.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio id="leopardAudio">
+            <source src="assets/sounds/leopard7.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio id="raccoonAudio">
+            <source src="assets/sounds/raccoon3.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <button class="sound-button" onclick="playAudio('alligatorAudio')" type="button">Listen to the alligator</button><br>
+        <button class="sound-button-pause" onclick="pauseAudio('alligatorAudio')" type="button">Quiet the alligator</button><br><br>
+        <img src="images/alligator.jpg" alt="Alligator" width="100" height="100">
+
+        <button class="sound-button" onclick="playAudio('batAudio')" type="button">Listen to bat</button><br>
+        <button class="sound-button-pause" onclick="pauseAudio('batAudio')" type="button">Quiet the bat</button><br><br>
+        <img src="images/bat.jpg" alt="Alligator" width="100" height="100">
+
+        <button class="sound-button" onclick="playAudio('hyenaAudio')" type="button">Listen to the hyena</button><br>
+        <button class="sound-button-pause" onclick="pauseAudio('hyenaAudio')" type="button">Quiet the hyena</button><br><br>
+        <img src="images/hyena.jpg" alt="Alligator" width="100" height="100">
+
+        <button class="sound-button" onclick="playAudio('leopardAudio')" type="button">Listen to the leopard</button><br>
+        <button class="sound-button-pause" onclick="pauseAudio('leopardAudio')" type="button">Quiet the leopard</button><br><br>
+        <img src="images/leopard.jpg" alt="Alligator" width="100" height="100">
+
+        <button class="sound-button" onclick="playAudio('raccoonAudio')" type="button">Listen to the raccoon</button><br>
+        <button class="sound-button-pause" onclick="pauseAudio('raccoonAudio')" type="button">Quiet the raccoon</button><br><br>
+        <img src="images/raccoon.jpg" alt="Alligator" width="100" height="100">
+    </div>
+    <script>
+        function playAudio(sound) { 
+            document.getElementById(sound).play(); 
+        } 
+
+        function pauseAudio(sound) { 
+            document.getElementById(sound).pause(); 
+        } 
+        </script>
+</body>
+</html>
